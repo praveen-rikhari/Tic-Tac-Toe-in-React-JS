@@ -1,0 +1,67 @@
+*{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}  
+
+.Board{
+  display: grid;
+  grid-template-columns: repeat(3 , 100px);
+  padding: 15px;
+  width: min-content;
+  height: min-content;
+  gap: 15px;
+}
+
+.Tile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}  
+
+.Tile:hover {
+  background-color: #f3f3f3;
+}
+
+.App button {
+  padding: 1.3em 3em;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.App button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.App button:active {
+  transform: translateY(-1px);
+}
+
+.App .heading{
+  font-size: 60px;
+  color: #3745a4;
+}
+
